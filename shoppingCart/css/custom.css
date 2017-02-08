@@ -1,0 +1,21 @@
+.row {
+	/*margin: 10px 0 10px 0;*/
+}
+.label-style {
+	display: inline-block;
+    width: 100px;
+}
+
+.list-icon {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: black;
+}
+
+.form-style {
+	margin-top: 20px;
+}
+
+.view-heading {
+	margin:20px 0 20px;
+}

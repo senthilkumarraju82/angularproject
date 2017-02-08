@@ -1,0 +1,63 @@
+<div class="modal-header">
+ <div > <h1 style="float:left;">Order Details</h1>
+  <button style="float:right;" type="button" class="minicart-closer" ng-click="cancel()">×</button>
+  </div>
+</div>
+<div class="modal-body" style="overflow-x: hidden;overflow-y: auto;">
+<div class="listorders" >
+	<ul style="clear: both;float: left;width: 100%;padding: 10px;list-style-type: none;background: #fff;border: 1px solid #ccc;border-radius: 4px;box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">
+			<li ng-repeat="n in orderlist" style="clear: left;padding: 6px 0;min-height: 60px !important;" class="minicart-item">
+				<div class="minicart-details-name" style="float: left;width: 62%;">
+				{{n.name}}
+					<ul class="minicart-attributes" style="margin: 0;padding: 0;background: transparent;border: 0;border-radius: 0;box-shadow: none;color: #999;font-size: 12px;line-height: 22px;list-style-type: none;">
+						<li>Old Price : Rs.{{n.oldPrice}}</li>
+					</ul>
+				</div>
+				<div class="minicart-details-quantity" style="float: left;width: 15%;">
+					<input ng-model='perkg' ng-change='itemQuantityChange(n, this)' class="minicart-quantity" type="text" name="quantity" style="width: 30px;
+    height: 18px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    font-size: 13px;
+    text-align: right;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;">
+				</div>
+				<div class="minicart-details-remove" style="float: left;width: 7%;">
+						<button ng-click="removeitem(n)" type="button" class="minicart-remove" style="    width: 18px;
+    height: 19px;
+    margin: 2px 0 0;
+    padding: 0;
+    background: #b7b7b7;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0.70;
+    cursor: pointer;background: #fa1818 !important;
+    border: 1px solid #fa1818 !important;
+    opacity: 1 !important;
+    outline: none;">×</button>
+				</div>
+				<div class="minicart-details-price" style="float: left;width: 16%;text-align: right;">
+						<span class="minicart-price" style="    text-align: right;">Rs.{{n.newPrice}}</span>
+				</div>
+		</li>
+    </ul>
+ </div>
+</div>
+<div class="modal-footer">
+		<div class="minicart-subtotal" style="    position: absolute;
+    bottom: 17px;
+    padding-left: 6px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;    padding-left: 25px !important;
+    bottom: 20px !important;">
+	    Subtotal: Rs. {{total}}
+		</div>
+    <button class="btn btn-primary" ng-click="customerInformation()">Proceed To Payment</button>
+    
+</div>
