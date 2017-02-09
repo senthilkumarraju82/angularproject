@@ -153,7 +153,7 @@
 										<div class="snipcart-thumb">
 											<a href="single.html"><img ng-src="{{fruitDetails.imageUrl}}" alt=" " class="img-responsive" /></a>
 											<p>{{fruitDetails.name}}</p>
-											<h4>${{fruitDetails.newPrice}}<span>${{fruitDetails.oldPrice}}</span></h4>
+											<h4>${{fruitDetails.basePrice}}<span>${{fruitDetails.withOutDiscountPrice}}</span></h4>
 										</div>
 										<div class="snipcart-details">
 											
@@ -163,7 +163,7 @@
 													<input type="hidden" name="business" value=" " />
 													<input type="hidden" name="item_id" value="{{fruitDetails.id}}" />
 													<input type="hidden" name="item_name" value="{{fruitDetails.name}}" />
-													<input type="hidden" name="amount" value="${{fruitDetails.newPrice}}" />
+													<input type="hidden" name="amount" value="${{fruitDetails.basePrice}}" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />

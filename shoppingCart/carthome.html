@@ -10,11 +10,11 @@
 				<div class="minicart-details-name" style="float: left;width: 62%;">
 				{{n.name}}
 					<ul class="minicart-attributes" style="margin: 0;padding: 0;background: transparent;border: 0;border-radius: 0;box-shadow: none;color: #999;font-size: 12px;line-height: 22px;list-style-type: none;">
-						<li>Old Price : Rs.{{n.oldPrice}}</li>
+						<li>Old Price : Rs.{{n.withOutDiscountPrice}}</li>
 					</ul>
 				</div>
 				<div class="minicart-details-quantity" style="float: left;width: 15%;">
-					<input ng-model='perkg' ng-change='itemQuantityChange(n, this)' class="minicart-quantity" type="text" name="quantity" style="width: 30px;
+					<input ng-model='perkg' ng-change='itemQuantityChange(n, this)' class="minicart-quantity" type="number" min="1" max="20" name="quantity" style="width: 40px;
     height: 18px;
     padding: 2px 4px;
     border: 1px solid #ccc;
@@ -42,7 +42,8 @@
     outline: none;">×</button>
 				</div>
 				<div class="minicart-details-price" style="float: left;width: 16%;text-align: right;">
-						<span class="minicart-price" style="    text-align: right;">Rs.{{n.newPrice}}</span>
+						<span class="minicart-price" style="    text-align: right;">Rs.{{n.totalPrice}}</span>
+						
 				</div>
 		</li>
     </ul>

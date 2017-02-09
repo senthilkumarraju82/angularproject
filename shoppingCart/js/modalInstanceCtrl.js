@@ -28,18 +28,18 @@ myApp.controller("modalInstanceCtrl", ["$scope", "$location", "$uibModalInstance
 	};
 	
 	$scope.itemQuantityChange = function (itemDetails, that) {
-		console.log(parseInt(that.perkg) * itemDetails.newPrice);
-		var index = cartItems.indexOf(itemDetails);
-		cartItems[index].newPrice = parseInt(that.perkg) * itemDetails.newPrice;
-		$scope.orderlist = cartItems;		
-		$scope.total = 	$scope.totalcalculation(cartItems);
-		
+		if(that.perkg) {
+			var index = cartItems.indexOf(itemDetails);
+			cartItems[index].totalPrice = parseInt(that.perkg) * itemDetails.basePrice;
+			$scope.orderlist = cartItems;		
+			$scope.total = 	$scope.totalcalculation(cartItems);
+		}
 	};
 	
 	$scope.totalcalculation = function(cartItems) {
 		$scope.total = 0;
 		angular.forEach(cartItems,function(value,index){
-               $scope.total = $scope.total +  value.newPrice;
+               $scope.total = $scope.total +  value.totalPrice;
             });
 			return Math.ceil($scope.total);
 	};

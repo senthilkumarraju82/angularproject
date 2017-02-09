@@ -14,7 +14,6 @@ myApp.controller("fruitsController", ["$scope", "$location", "$http", "$routePar
 	 $scope.addtocartpopup = function(orderitem) {
         //alert("calling");
 		$scope.cartItems.push(orderitem);
-		console.log($scope.cartItems);
 		if($rootScope.globalCartItems === undefined) {
 			$rootScope.globalCartItems = [];
 		}

@@ -22,6 +22,7 @@ myApp.controller("dryFruitsController", ["$scope", "$location", "$http", "$route
       };  
 		
 		$scope.opencartpopup = function() {
+		if($scope.globalCartItems && $scope.globalCartItems.length) {
         $uibModal.open({
 			templateUrl: 'carthome.html',
 			controller: 'modalInstanceCtrl',
@@ -31,6 +32,10 @@ myApp.controller("dryFruitsController", ["$scope", "$location", "$http", "$route
 				}
 			}
 		});
+		}
+		else{
+			alert("Please add Items to the cart");
+		}
       };
 	  
 	$scope.getDryFruitDetails = function () {

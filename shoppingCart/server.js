@@ -68,88 +68,102 @@ var employee = [{
 	
 	var fruitDetails = [{
 		id: 1,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh sweet lime (500 gm)',
 		imageUrl: 'images/32.png'
 	},{
 		id: 2,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh mango dasheri (1 kg)',
 		imageUrl: 'images/10.png'
 	},{
 		id: 3,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh apple red (1 kg)',
 		imageUrl: 'images/11.png'
 	},{
 		id: 4,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh muskmelon (1 kg)',
 		imageUrl: 'images/34.png'
 	},{
 		id: 5,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh strawberry (1 pc)',
 		imageUrl: 'images/36.png'
 	},{
 		id: 6,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'
 	},{
 		id: 7,
-		newPrice: 10.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'
 	}];
 	
 	var dryfruitDetails = [{
 		id: 1,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh sweet lime (500 gm)',
 		imageUrl: 'images/32.png'
 	},{
 		id: 2,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh mango dasheri (1 kg)',
 		imageUrl: 'images/10.png'
 	},{
 		id: 3,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh apple red (1 kg)',
 		imageUrl: 'images/11.png'
 	},{
 		id: 4,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh muskmelon (1 kg)',
 		imageUrl: 'images/34.png'
 	},{
 		id: 5,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'fresh strawberry (1 pc)',
 		imageUrl: 'images/36.png'
 	},{
 		id: 6,
-		newPrice: 7.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'
 	},{
 		id: 7,
-		newPrice: 10.99,
-		oldPrice: 10.00,
+		basePrice: 7.99,
+		totalPrice: 7.99,
+		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'
 	}];
