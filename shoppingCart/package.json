@@ -1,12 +1,12 @@
 {
-  "name": "companyaddressbook",
+  "name": "puthukoodai",
   "version": "1.0.0",
   "description": "CURD",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "sanjai kumar sankar",
+  "author": "senthil kumar raju",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",

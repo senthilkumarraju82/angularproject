@@ -24,6 +24,7 @@ myApp.controller("modalInstanceCtrl", ["$scope", "$location", "$uibModalInstance
 		cartItems.splice(index, 1); 
 		$scope.orderlist = cartItems;		
 		$scope.total = 	$scope.totalcalculation(cartItems);
+		
 	};
 	
 	$scope.itemQuantityChange = function (itemDetails, that) {
