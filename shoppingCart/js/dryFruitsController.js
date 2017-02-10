@@ -5,6 +5,7 @@ myApp.controller("dryFruitsController", ["$scope", "$location", "$http", "$route
 	
 	$scope.init = function () {
 		//$scope.fetchSelectedEmployee($routeParams.id);
+		
 		$scope.getDryFruitDetails();
 		//$scope.cartItems = $rootScope.globalCartItems; 
 				
@@ -13,12 +14,12 @@ myApp.controller("dryFruitsController", ["$scope", "$location", "$http", "$route
 	$scope.addtocartpopup = function(orderitem) {
         //alert("calling");
 		$scope.cartItems.push(orderitem);
-		console.log($scope.cartItems);
+	//	console.log("addtocart:"+JSON.stringify($scope.cartItems));
 		if($rootScope.globalCartItems === undefined) {
 			$rootScope.globalCartItems = [];
 		}
 		$rootScope.globalCartItems.push(orderitem);
-		
+		//console.log("inside add cart : "+ JSON.stringify($rootScope.globalCartItems));
       };  
 		
 		$scope.opencartpopup = function() {
@@ -44,7 +45,7 @@ myApp.controller("dryFruitsController", ["$scope", "$location", "$http", "$route
 			url: '/dryfruitDetails'
 		}).then(function success(response) {
 			$scope.dryfruitDetails = response.data;
-			
+			//console.log("total items: "+ JSON.stringify($scope.dryfruitDetails));
 		}, function error(response){
 			alert('error');
 		});		

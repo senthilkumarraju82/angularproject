@@ -70,6 +70,7 @@ var employee = [{
 		id: 1,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh sweet lime (500 gm)',
 		imageUrl: 'images/32.png'
@@ -77,6 +78,7 @@ var employee = [{
 		id: 2,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh mango dasheri (1 kg)',
 		imageUrl: 'images/10.png'
@@ -84,6 +86,7 @@ var employee = [{
 		id: 3,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh apple red (1 kg)',
 		imageUrl: 'images/11.png'
@@ -91,6 +94,7 @@ var employee = [{
 		id: 4,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh muskmelon (1 kg)',
 		imageUrl: 'images/34.png'
@@ -98,6 +102,7 @@ var employee = [{
 		id: 5,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh strawberry (1 pc)',
 		imageUrl: 'images/36.png'
@@ -105,6 +110,7 @@ var employee = [{
 		id: 6,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'
@@ -112,6 +118,7 @@ var employee = [{
 		id: 7,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'
@@ -121,6 +128,7 @@ var employee = [{
 		id: 1,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh sweet lime (500 gm)',
 		imageUrl: 'images/32.png'
@@ -128,6 +136,7 @@ var employee = [{
 		id: 2,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh mango dasheri (1 kg)',
 		imageUrl: 'images/10.png'
@@ -135,6 +144,7 @@ var employee = [{
 		id: 3,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh apple red (1 kg)',
 		imageUrl: 'images/11.png'
@@ -142,6 +152,7 @@ var employee = [{
 		id: 4,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh muskmelon (1 kg)',
 		imageUrl: 'images/34.png'
@@ -149,6 +160,7 @@ var employee = [{
 		id: 5,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'fresh strawberry (1 pc)',
 		imageUrl: 'images/36.png'
@@ -156,6 +168,7 @@ var employee = [{
 		id: 6,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'
@@ -163,6 +176,7 @@ var employee = [{
 		id: 7,
 		basePrice: 7.99,
 		totalPrice: 7.99,
+		kg: 1,
 		withOutDiscountPrice: 10.00,
 		name: 'Fortune SUnflower Oil',
 		imageUrl: 'images/1.png'

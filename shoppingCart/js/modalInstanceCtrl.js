@@ -1,13 +1,13 @@
 myApp.controller("modalInstanceCtrl", ["$scope", "$location", "$uibModalInstance", "$uibModal", "$routeParams", "$rootScope", "cartItems", function ($scope, $location, $uibModalInstance, $uibModal, $routeParams, $rootScope, cartItems) {
 
 	$scope.orderlist = [];
-	$scope.perkg = 1;
+	//$scope.perkg = 1;
 	
     $scope.init = function () {
 				
 		$scope.total = 	$scope.totalcalculation(cartItems);
 		$scope.orderlist = cartItems;
-		
+		//console.log("inside cart page : "+ cartItems);
 	};
 	
 		
@@ -27,12 +27,15 @@ myApp.controller("modalInstanceCtrl", ["$scope", "$location", "$uibModalInstance
 		
 	};
 	
-	$scope.itemQuantityChange = function (itemDetails, that) {
-		if(that.perkg) {
+	$scope.itemQuantityChange = function (itemDetails, kg) {
+	//console.log("kg details :"+ kg);
+		if(kg) {
 			var index = cartItems.indexOf(itemDetails);
-			cartItems[index].totalPrice = parseInt(that.perkg) * itemDetails.basePrice;
+			cartItems[index].totalPrice = parseInt(kg) * itemDetails.basePrice;
+			cartItems[index].kg = kg;
 			$scope.orderlist = cartItems;		
 			$scope.total = 	$scope.totalcalculation(cartItems);
+			//console.log(cartItems);
 		}
 	};
 	
@@ -50,6 +53,7 @@ myApp.controller("modalInstanceCtrl", ["$scope", "$location", "$uibModalInstance
 			controller: 'customerFormCtrl',
 			resolve: {
 				cartItems: function () {
+					$scope.globalCartItems.push({"totalAmount":$scope.total});
 					return $scope.globalCartItems;
 				}
 			}

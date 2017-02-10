@@ -18,7 +18,7 @@ myApp.controller("fruitsController", ["$scope", "$location", "$http", "$routePar
 			$rootScope.globalCartItems = [];
 		}
 		$rootScope.globalCartItems.push(orderitem);
-		
+	//	console.log("inside fruit add cart : "+ JSON.stringify($rootScope.globalCartItems));
       };  
 		
 		$scope.opencartpopup = function() {

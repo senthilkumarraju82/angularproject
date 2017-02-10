@@ -34,6 +34,7 @@ myApp.controller("mainController", ["$scope", "$location", "$http", "$routeParam
 	}
 	
 	$scope.opencartpopup = function() {
+	if($scope.globalCartItems && $scope.globalCartItems.length) {
         $uibModal.open({
 			templateUrl: 'carthome.html',
 			controller: 'modalInstanceCtrl',
@@ -43,6 +44,10 @@ myApp.controller("mainController", ["$scope", "$location", "$http", "$routeParam
 				}
 			}
 		});
+		}
+		else {
+				alert("Please add Items to the cart");
+		}
       };
 	  
 	

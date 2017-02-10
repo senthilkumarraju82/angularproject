@@ -45,16 +45,17 @@ myApp.controller("customerFormCtrl", ["$scope", "$location", "$uibModalInstance"
   $scope.getDirections = function () {
     var request = {
       origin: origin,
-      destination: $scope.customer.destination,
+      destination: $scope.custinfo.pincode,
       travelMode: google.maps.DirectionsTravelMode.DRIVING
     };
+	
     directionsService.route(request, function (response, status) {
       if (status === google.maps.DirectionsStatus.OK) {
 	    var dist = response.routes[0].legs[0].distance.text;
 		dist = parseInt(dist.slice(0,-2));
 		console.log(dist);
 		if(dist <= 15) {
-		console.log("we can deliver ur order");
+				$scope.finalCustomerOrderAndInfo();
 		} else {
 		alert("we can not deliver ur order");
 		}
@@ -67,5 +68,13 @@ myApp.controller("customerFormCtrl", ["$scope", "$location", "$uibModalInstance"
         alert('Google route unsuccesfull!');
       }
     });
+  }
+  
+  $scope.finalCustomerOrderAndInfo = function () {
+		var order = {"customerInformation":"","orderDetails":""};
+		order["customerInformation"] = $scope.custinfo;
+		order["orderDetails"] = $scope.globalCartItems;
+		console.log(JSON.stringify(order));
+		//window.location.href = '/';
   }
 }]);
