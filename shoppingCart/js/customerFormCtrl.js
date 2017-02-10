@@ -74,7 +74,7 @@ myApp.controller("customerFormCtrl", ["$scope", "$location", "$uibModalInstance"
 		var order = {"customerInformation":"","orderDetails":""};
 		order["customerInformation"] = $scope.custinfo;
 		order["orderDetails"] = $scope.globalCartItems;
-		console.log(JSON.stringify(order));
+		//console.log(JSON.stringify(order));
 		//window.location.href = '/';
   }
 }]);
