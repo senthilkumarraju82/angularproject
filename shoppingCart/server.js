@@ -126,60 +126,60 @@ var employee = [{
 	
 	var dryfruitDetails = [{
 		id: 1,
-		basePrice: 7.99,
-		totalPrice: 7.99,
+		basePrice: 450,
+		totalPrice: 450,
 		kg: 1,
-		withOutDiscountPrice: 10.00,
-		name: 'fresh sweet lime (500 gm)',
-		imageUrl: 'images/32.png'
+		withOutDiscountPrice: 500.00,
+		name: 'Almonds  (1 kg)',
+		imageUrl: 'images/Almonds.jpg'
 	},{
 		id: 2,
-		basePrice: 7.99,
-		totalPrice: 7.99,
+		basePrice: 300,
+		totalPrice: 300,
 		kg: 1,
-		withOutDiscountPrice: 10.00,
-		name: 'fresh mango dasheri (1 kg)',
-		imageUrl: 'images/10.png'
+		withOutDiscountPrice: 400.00,
+		name: 'Cashewnut (1 kg)',
+		imageUrl: 'images/Cashews.jpg'
 	},{
 		id: 3,
-		basePrice: 7.99,
-		totalPrice: 7.99,
+		basePrice: 100,
+		totalPrice: 100,
 		kg: 1,
-		withOutDiscountPrice: 10.00,
-		name: 'fresh apple red (1 kg)',
-		imageUrl: 'images/11.png'
+		withOutDiscountPrice: 150.00,
+		name: 'Dry Fig (1 kg)',
+		imageUrl: 'images/Figs.jpg'
 	},{
 		id: 4,
-		basePrice: 7.99,
-		totalPrice: 7.99,
+		basePrice: 45,
+		totalPrice: 45,
 		kg: 1,
-		withOutDiscountPrice: 10.00,
-		name: 'fresh muskmelon (1 kg)',
-		imageUrl: 'images/34.png'
+		withOutDiscountPrice: 50.00,
+		name: 'Peanuts (1 kg)',
+		imageUrl: 'images/Peanuts.jpg'
 	},{
 		id: 5,
-		basePrice: 7.99,
-		totalPrice: 7.99,
+		basePrice: 550,
+		totalPrice: 550,
 		kg: 1,
-		withOutDiscountPrice: 10.00,
-		name: 'fresh strawberry (1 pc)',
-		imageUrl: 'images/36.png'
+		withOutDiscountPrice: 600.00,
+		name: 'Pista (1 kg)',
+		imageUrl: 'images/Pistachios.jpg'
 	},{
 		id: 6,
-		basePrice: 7.99,
-		totalPrice: 7.99,
+		basePrice: 150,
+		totalPrice: 150,
 		kg: 1,
-		withOutDiscountPrice: 10.00,
-		name: 'Fortune SUnflower Oil',
-		imageUrl: 'images/1.png'
+		withOutDiscountPrice: 200.00,
+		name: 'Raisins (1 kg)',
+		imageUrl: 'images/Raisins.jpg'
 	},{
 		id: 7,
-		basePrice: 7.99,
-		totalPrice: 7.99,
+		basePrice: 600,
+		totalPrice: 600,
 		kg: 1,
-		withOutDiscountPrice: 10.00,
-		name: 'Fortune SUnflower Oil',
-		imageUrl: 'images/1.png'
+		withOutDiscountPrice: 100.00,
+		name: 'Walnuts (1 kg)',
+		imageUrl: 'images/Walnuts.jpg'
 	}];
 	
 var PORT = process.env.PORT || 3000;
@@ -257,4 +257,7 @@ app.post('/employee/delete', function (req, res) {
 
 app.listen(PORT, function () {
   console.log('Server listening on '+PORT);
+  console.log('__dirname '+__dirname);
+  
 });
+
